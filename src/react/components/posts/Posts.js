@@ -31,6 +31,7 @@ function Posts(props) {
 
     console.log(show);
     useEffect(() => {
+
         if (show)
             {
             fetch(URLJSON + POSTS, {
@@ -42,7 +43,7 @@ function Posts(props) {
             })
                 .then(value => value.json())
                 .then(value => dispatch({type: SET_POSTS, payload: [value]}))
-            // .then(value => setChange())
+
             setAdder(!adder)
             setShow(!show)
             }
@@ -72,10 +73,6 @@ function Posts(props) {
         <div>
             {posts.map((value, index) => <Post post = {value} key = {index} search = {search}/>)}
         </div>
-
-
-
-
     </div>);
 }
 

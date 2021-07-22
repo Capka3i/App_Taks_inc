@@ -11,7 +11,6 @@ function Comments(props) {
 
     const search = props.location.search;
 
-
     useEffect(() => {
         fetch(URLJSON + COMMENTS + search)
             .then(value => value.json())

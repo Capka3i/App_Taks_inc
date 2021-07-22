@@ -6,9 +6,11 @@ export const styleUser = {
     margin: '10px',
     padding: '3px',
 }
+
 export const flex = {
     height: '100%', display: 'flex', flexWrap: 'wrap'
 }
+
 export const styleHead = {
 
     height: '5%',
@@ -32,9 +34,11 @@ export const buttonStyle = {
     fontSize: '16px',
     marginRight: '10px'
 }
+
 export const inputStyle = {
     backgroundColor: '#3CBC8D', color: 'white'
 }
+
 export const styleComments = {
     border: 'thick double #ad2e18',
     margin: '5px'

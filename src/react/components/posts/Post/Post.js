@@ -7,7 +7,6 @@ function Post(props) {
 
     const {search} = props;
     const {id} = props.post;
-
     const someSearch = search.split('?userId=').pop();
 
     const [show, setShow] = useState(false);
